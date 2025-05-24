@@ -1,0 +1,1261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Underdog', sans-serif;
+  color: #686d56;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
+#iconBar {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  gap: 30px;
+  z-index: 10;
+}
+
+#iconBar img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s ease;
+}
+
+#iconBar img:hover {
+  transform: scale(1.3);
+}
+
+section {
+  padding: 100px 20px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  backdrop-filter: (5px);
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  color: #3399ff;
+  text-shadow: 0 0 10px #000;
+  font-family: 'Underdog', sans-serif;
+  }
+  
+  .hero h1 {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.hero p {
+  font-size: 2.2rem;
+  margin-top: px;
+  color: #911111;
+}
+
+.about h2, .game h2, .memes h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about p, .game p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.meme-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.meme-container img {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+body {
+  font-family: 'Underdog', cursive;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.hero h1 {
+  font-family: 'underdog', cursive;
+  font-size: 5.5rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ffffff91;
+  color: #911111
+}
+
+.hero-sub {
+  font-family: 'underdog', cursive;
+  font-size: 3.2rem;
+  line-height: 2.1;
+  margin-bottom: -80px;
+}
+
+ .highlight {
+  color: #911111;
+  font-family: 'underdog',  cursive;
+  font-size: 3,2rem; /* Boyutu buradan ayarlıyorsun */
+  line-height: 1,3;
+  text-shadow: 0 0 10px #ffffff00;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+
+#iconBar a img {
+  width: 52px;
+  height: 52px;
+  border-radius: 30px; /* 🟢 KÖŞELERİ OVAL YAPAR */
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5); /* ✨ IŞIK / PARLAMA EFEKTİ */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#iconBar a:hover img {
+  transform: scale(1.2);
+  box-shadow: 0 0 24px rgba(255, 255, 255, 0.9); /* HOVER'DA PARLAMAYI ARTTIR */
+}
+@keyframes glow {
+  0% { box-shadow: 0 0 0px #ffffff; }
+  50% { box-shadow: 0 0 0px #cb11d1; }
+  100% { box-shadow: 0 0 0px #ffffff; }
+}
+
+#iconBar a img {
+  animation: glow 2s infinite ease-in-out;
+}
+
+.paw-emoji {
+  position: absolute;
+  font-size: 32px;
+  pointer-events: none;
+  animation: pawFade 1.8s forwards;
+  z-index: 9999;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+@keyframes pawFade {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 14px 20px;
+  z-index: 999;
+  border-radius: 0 0 20px 20px;
+}
+
+.custom-navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: 'luckiest guy', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.strike {
+  position: relative;
+  display: inline-block;
+  color: #ff0000;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.strike::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 6px;
+  background: #911111;
+  animation: slowStrike 4.5s ease-out forwards;
+  width: 0;
+}
+
+@keyframes slowStrike {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id]::before {
+  content: "";
+  display: block;
+  height: 100px; 
+  margin-top: -100px;
+  visibility: hidden;
+}
+
+/* Scrollbar'ın kendisi */
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+/* Scrollbar rayı (arka plan) */
+::-webkit-scrollbar-track {
+  background: rgba(201, 197, 197, 0.05);
+  border-radius: 10px;
+}
+
+/* Scrollbar başlığı (kaydırma topuzu) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff3e9d, #0099ff);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Hover olunca rengi değişsin */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #ff69b4, #00ccff);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* ✨ DÜZ GEÇİŞ BÖLÜMÜ */
+.flat-divider {
+  background-color: #f0e6d2;
+  padding: 60px 0;
+  text-align: center;
+  position: relative;
+}
+
+.scroll-text {
+  font-size: 3rem;
+  font-family: 'Luckiest Guy', cursive;
+  color: #ff69b4;
+  display: inline-block;
+  overflow: hidden;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  position: relative;
+}
+
+.scroll-text span {
+  display: block;
+  animation: scrollText 4s linear infinite;
+}
+
+@keyframes scrollText {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-3.5rem); }
+  100% { transform: translateY(0); }
+}
+
+/* 🔵 Kayan Şerit Stili */
+
+.moving-strip {
+  background-color: #1d7fe2; /* Mavi zemin */
+  padding: 20px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+  transform: translateX(-10px);
+
+  /* ÇERÇEVE */
+  border: 7px solid #00000033; /* Yarı saydam kırmızımsı ton */
+  border-radius: 0px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+
+  /* TAM GENİŞLİK + KUTU BOYUTU */
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  display: inline-block;
+  animation: scroll-left 80s linear infinite; /* Daha uzun süre = daha yavaş akış */
+  font-family: 'luckiest guy', cursive;
+  font-size: 4rem;
+  color: #dddddd; /* Beyazın biraz koyusu */
+  padding-left: 100%;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.cat-video-wrapper {
+  position: relative;
+  margin: 80px auto 80px auto; /* Üstten 40px boşluk */
+  max-width: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.cat-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 35px;
+}
+
+.logo {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 10000;
+  display: block;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+  transform: scale(1.1);
+}
+
+.hero {
+  background-color: #f5f39000; /* Pastel krem/sarı */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: #000;
+}
+
+.confetti {
+  position: fixed;
+  top: -20px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  animation: fall linear forwards;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.9;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(150vh) rotate(1440deg); /* Daha uzun düşüş */
+    opacity: 0;
+  }
+}
+
+.bcat-about-section {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bcat-about-title {
+  font-size: 5rem;
+  font-family: 'luckiest guy', cursive;
+  margin-bottom: 40px;
+  margin-top: -150px;
+  color: #ffffffe1;
+}
+
+.bcat-about-image-wrapper {
+  margin-bottom: 60px;
+}
+
+.bcat-about-image {
+  max-width: 700px;
+  width: 100%;
+  margin-top: -100px
+}
+
+.bcat-about-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.bcat-card-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.bcat-card {
+  background: #beb200;
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 25px;
+  font-family: 'underdog', cursive;
+  border: 2px solid rgb(235, 21, 21);
+  box-shadow: 0 6px 20px rgb(0, 0, 0);
+  transition: all 0.3s ease;
+  transform: scale(1);
+  opacity: 0;
+  color: #f70000;
+  font-size: 1.5rem;
+}
+
+.bcat-card:hover {
+  transform: scale(1.08) rotateZ(1deg);
+  box-shadow: 0 18px 30px rgba(255, 255, 255, 0.25);
+}
+
+.scroll-animate {
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all 0.6s ease-out;
+}
+
+.scroll-animate.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.bcat-card-column.left {
+  transform: translateX(-300px); /* 👈 isteğe göre -100px, -150px de olur */
+  margin-top: -650px
+}
+
+.bcat-card-column.right {
+  transform: translateX(300px); 
+  margin-top: -650px
+}
+
+.bcat-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-origin: center;
+}
+
+.bcat-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 18px 30px rgba(255, 255, 255, 0.25);
+}
+
+.bcat-card {
+  overflow: hidden;         /* dışarı taşan kısmı gizler */
+  word-wrap: break-word;    /* kelimeleri gerekirse böler */
+  word-break: break-word;   /* uzun kelimeleri de böler */
+}
+
+/* 🔵 3.kısım */
+.moving-strip2 {
+  background-color: #1d7fe2; /* Mavi zemin */
+  padding: 20px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+  transform: translateX(-30px);
+
+  /* ÇERÇEVE */
+  border: 6px solid #00000033;
+  border-radius: 0px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+
+  /* TAM GENİŞLİK */
+  width: 101vw;
+  box-sizing: border-box;
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  display: inline-block;
+  animation: scroll-left 80s linear infinite;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 4rem;
+  color: #ffffff;
+  padding-left: 100%;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.section-three {
+  position: relative;
+  z-index: 1;
+}
+
+.roadmap-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.roadmap-card {
+  width: 250px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.roadmap-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  font-family: 'Underdog', cursive;
+  font-size: rem
+}
+
+.card-front {
+  background: #1564f7;
+  color: #333;
+}
+
+.card-back {
+  background: #3399ff;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.tokenomics-title {
+  font-family: 'Luckiest Guy', cursive;
+  text-align: center;
+  font-size: 3rem;
+  color: #222;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+
+  position: relative;
+  top: -140px; /* 👈 Yazıyı yukarı çıkarır */
+  background: linear-gradient(145deg, #dd7d08, #9c0000cb); /* Arka planla aynı ton */
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgb(0, 0, 0);
+}
+
+.tokenomics-section {
+  background: linear-gradient(145deg, #016a94, #0277a5); /* Pastel geçiş */
+  padding: 40px 20px;
+  max-width: 1000px;     /* Sağ ve sol sınır */
+  margin: 0 auto;        /* Ortalamak için */
+  border-radius: 40px;   /* Yumuşak köşeler */
+  min-height: 300px;
+  margin-top: -30px;
+  border: 5px solid rgb(0, 0, 0); /* Yarı saydam beyaz çerçeve */
+  box-shadow: 0 0 25px rgb(56, 0, 0); /* Hafif parıltı */
+}
+
+.tokenomics-chart-wrapper {
+  display: flex;
+  justify-content: flex-end; /* 👉 Pastayı sağa yasla */
+  align-items: center;
+  margin-top: -150px;
+  padding-right: 0px; /* 👉 İstersen boşluk bırak sağ kenardan */
+}
+
+.tokenomics-chart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    /* Community – sarı – 70% */
+    #0f32a5d3 0% 70%,
+    
+    /* Fun – mavi – 15% */
+    #c533ff 70% 85%,
+    
+    /* Cat Vibes – turuncu – 10% */
+    #c57600 70% 95%,
+    
+    /* Team – pembe – 5% */
+    #e2d303 95% 100%
+  );
+  transition: transform 0.3s ease;
+  border: 6px solid #000;
+  border-radius: 50%;
+}
+
+.tokenomics-chart:hover {
+  transform: scale(1.05);
+}
+
+.slice {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.slice:hover {
+  transform: scale(1.08);
+}
+
+.chart-logo {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(199, 8, 8, 0);
+}
+
+.token-bars {
+  margin-top: -100px;
+  width: 50%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.token-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 👈 Yazıları sola hizalar */
+  width: 80%;
+}
+
+.bar-label {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 6px;
+  text-align: left; /* 👈 Sol hizalama */
+}
+
+.bar-track {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+.total-supply {
+  position: relative;
+  top: -140px;         /* Yukarı almak için negatif değer */
+  left: 700px;        /* Sağa kaydırmak için pozitif değer */
+  text-align: left;   /* Yazılar sola yaslı kalsın istersen */
+  font-family: 'Luckiest Guy', cursive;
+  color: #fff;
+}
+
+.total-supply h3 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+.total-supply p {
+  font-size: 1.6rem;
+  color: #000000;
+}
+
+.ca-box {
+  /* Blur ve saydam arka plan */
+  background: rgba(255, 255, 255, 0.08); /* Yarı saydam kutu rengi */
+  backdrop-filter: blur(10px);           /* 🎯 Arka planı bulanık yapar */
+  -webkit-backdrop-filter: blur(10px);   /* Safari uyumluluğu */
+  
+  /* Çerçeve ve gölge */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+  /* Boyut ve hizalama */
+  width: 100%;           /* Enlemesine kutu genişliği */
+  max-width: 400px;     /* Maksimum genişlik */
+  margin: 0px auto;    /* Ortalamak için üst-alt boşluk + yatay merkezleme */
+  padding: 10px 10px;   /* İç boşluk (üst-alt, sağ-sol) */
+
+  /* Konumlandırma */
+  margin-top: -55px;   /* 🎯 Yukarı taşır */
+  margin-left: -5px;  /* 🎯 Sola taşır */
+  
+  display: flex;
+  justify-content: flex-start;  /* 🎯 Yazıyı soldan başlatır */
+  align-items: center;          /* Dikeyde ortalar */
+}
+
+.ca-text {
+  font-size: 1.8rem;
+  font-family: 'luckiest guy', sans-serif;
+  color: #000000;
+  word-break: break-all;         /* Uzun yazılar taşmasın diye böler */
+  flex-grow: 1;                  /* 🎯 Yazının kutuya uyumlu büyümesini sağlar */
+  text-align: left; /* 🎯 Soldan hizalı */
+  width: 100%;
+}
+
+.about-button {
+  position: absolute;
+  top: 25px; /* navbar yüksekliğine göre ayarla */
+  right: -190px; /* sağdan uzaklık, ikonlarla navbar arasında */
+  padding: 8px 18px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 18px;
+  color: rgb(189, 0, 0);
+  background: linear-gradient(135deg, #1384b8, #1384b8);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgb(180, 174, 174);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 1000;
+}
+
+.about-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgb(0, 0, 0);
+}
+
+/*pacman*/
+
+#pacman {
+  height: 900px;
+  width: 382px;
+  border-radius: 5px;
+  margin: 20px auto;
+  margin-left: 690px; /* sola kaydırır */
+  margin-top: 20px;  /* üstten biraz boşluk */
+}
+
+#pacman canvas {
+  display: block;
+  margin: 0 auto;
+  margin-top: -60px;
+  border-radius: 12px;
+  height: 650px;
+}
+
+/* pati */
+/* Temel stil sıfırlama */
+
+body {
+  min-height: 100vh; /* 200vh yerine 100vh */
+  background: linear-gradient(to bottom, #0565be 0%, #d8b4fe 50%, #beb200 100%);
+  color: #581c87;
+  overflow-x: hidden;
+}
+
+/* İçerik alanı - kendi içeriğiniz için */
+#content {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  /* İçeriğinize göre diğer stilleri ekleyebilirsiniz */
+}
+
+/* Pati container */
+.paw-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Pati elementleri */
+.paw {
+  position: fixed;
+  opacity: 0.8;
+  transition: transform 2s ease-out;
+}
+
+/* Arka plan deseni */
+.background-pattern {
+  position: fixed;
+  inset: 0;
+  background-size: 30px 30px;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.bcat-footer {
+  padding: 5px 5px;
+  text-align: center;
+  font-family: 'Alegreya', cursive;
+  font-size: 2rem;
+}
+
+.bcat-footer p {
+  margin: 0px 0;
+  line-height: 1.9;
+  color: #000000;
+}
+
+.legal-disclaimer {
+  font-size: 1.4rem;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.bcat-footer .footer-content p {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+/* responsive alan*/
+
+@media (max-width: 1024px) {
+  #pacman {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  #pacman canvas {
+    display: none !important;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .hero-sub {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: -40px;
+  }
+
+  .highlight,
+  .strike {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .cat-video-wrapper {
+    max-width: 90%;
+    margin-top: 30px;
+  }
+
+  .cat-video {
+    border-radius: 20px;
+  }
+}
+
+/* Mobil */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+  }
+
+  .hero-sub {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: -30px;
+  }
+
+  .highlight,
+  .strike {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .cat-video-wrapper {
+    max-width: 95%;
+    margin-top: 30px;
+  }
+
+  .cat-video {
+    border-radius: 15px;
+  }
+}
+
+/* Tablet ve Mobil: ikonları alta sabitle */
+@media (max-width: 1024px) {
+  #iconBar {
+    position: absolute;
+    bottom: 20px;
+    top: auto;
+    right: 50%;
+    transform: translateX(50%);
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+    z-index: 1000;
+  }
+
+  #iconBar img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Logo için responsive */
+@media (max-width: 1024px) {
+  .logo {
+    top: 10px;
+    left: 10px;
+  }
+
+  .logo img {
+    width: 60px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    top: 8px;
+    left: 8px;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+}
+
+/* About butonu için responsive */
+@media (max-width: 1024px) {
+  .about-button {
+    top: 10px;
+    right: 300px;
+    font-size: 16px;
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-button {
+    top: 8px;
+    right: 200px;
+    font-size: 14px;
+    padding: 5px 12px;
+  }
+}
+
+/*about*/
+
+/* İlk kayan şerit için responsive ayarlar */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .moving-strip {
+    padding: 14px 0;
+    border-width: 5px;
+    width: 100vw;
+    transform: none;
+  }
+
+  .scrolling-text {
+    font-size: 2.8rem;
+  }
+}
+
+/* Mobil */
+@media (max-width: 600px) {
+  .moving-strip {
+    padding: 12px 0;
+    border-width: 4px;
+    width: 100vw;
+    transform: none;
+  }
+
+  .scrolling-text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bcat-about-title {
+    font-size: 3rem;
+    margin-top: -80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bcat-about-title {
+    font-size: 2.2rem;
+    margin-top: -60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bcat-about-image {
+    max-width: 500px;
+    margin-top: -60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bcat-about-image {
+    max-width: 90%;
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bcat-card-column {
+    transform: none !important;
+    margin-top: 0 !important;
+  }
+
+  .bcat-card {
+    font-size: 1.3rem;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bcat-card {
+    font-size: 1.1rem;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .moving-strip2 {
+    transform: translateX(-30px);
+  }
+}
+
+@media (max-width: 600px) {
+  .moving-strip2 {
+    transform: translateX(-30px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .roadmap-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .roadmap-card {
+    width: 80%;
+    max-width: 300px;
+    height: 320px;
+  }
+
+  .card-front h3,
+  .card-back h3 {
+    font-size: 2rem;
+  }
+
+  .card-front p,
+  .card-back ul {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .roadmap-card {
+    width: 90%;
+    height: 300px;
+  }
+
+  .card-front h3,
+  .card-back h3 {
+    font-size: 1.6rem;
+  }
+
+  .card-front p,
+  .card-back ul {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tokenomics-title {
+    top: 0;
+    margin-top: 20px;
+    position: static;
+  }
+
+  .tokenomics-chart-wrapper {
+    margin-top: 20px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .token-bars {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .total-supply {
+    position: static;
+    margin-top: 30px;
+    left: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .tokenomics-title {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
+
+  .tokenomics-chart-wrapper {
+    margin-top: 10px;
+  }
+
+  .tokenomics-chart {
+    width: 150px;
+    height: 150px;
+  }
+
+  .chart-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .bar-label {
+    font-size: 1rem;
+  }
+
+  .token-bars {
+    gap: 16px;
+  }
+
+  .total-supply h3 {
+    font-size: 1.6rem;
+  }
+
+  .total-supply p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tokenomics-title {
+    font-size: 2.4rem;
+  }
+  .tokenomics-chart {
+    width: 150px;
+    height: 150px;
+  }
+  .chart-logo {
+    width: 50px;
+    height: 50px;
+  }
+  .token-bars {
+    gap: 16px;
+  }
+  .bar-label {
+    font-size: 1rem;
+  }
+  .total-supply h3 {
+    font-size: 1.8rem;
+  }
+  .total-supply p {
+    font-size: 1.2rem;
+  }
+}
+
